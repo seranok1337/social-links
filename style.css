@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Font';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    font-family: 'Font', sans-serif;
+    background-color: #141414;
+}
+
+.card {
+    width: 300px;
+    height:  auto; /* Change to auto to allow for content height */
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-bottom: 30px; 
+    padding: 30px;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 0px;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+    height: 100vh;
+}
+
+button {
+    background-color: hsl(0, 0%, 20%);
+    color: #fff;
+    border-radius: 5px; /* rounded corners */
+    font-family: 'Font', sans-serif;
+    max-width: 100%; /* maximum width */
+    border: none; 
+    width:  90%;
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+  
+.buttons {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;    /* centers vertically */
+    flex-direction: column;
+  }
+  
+  .picturesomething {
+    border-radius: 50%; /* скругляем контейнер */
+    overflow: hidden;   /* обрезаем содержимое */
+    width: 90px;       /* задаем ширину */
+    height: 90px;      /* задаем высоту */
+    margin: 0 auto;     /* центрируем в блоке */
+}
+
+.picturesomething img {
+    width: 100%;        /* растягиваем изображение */
+    height: 100%;       /* чтобы заполнить круг */
+    object-fit: cover;  /* сохраняем пропорции картинки */
+}
+
+p {
+    margin: 3px 0; /* задаём равномерные отступы сверху и снизу */
+    padding-bottom: 5px;
+}
+
